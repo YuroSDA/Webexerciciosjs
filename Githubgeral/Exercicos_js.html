@@ -1,0 +1,46 @@
+
+
+
+
+<!--Escreva uma função que recebe um array de números e retorna a média deles-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var limite = prompt("Quantos numeros?");
+    var numeros = 0
+    var laço = 0;
+    var soma = 0;
+    var arrayy = [];
+    var resultado = 0
+    function media ()
+    {
+    while (laço < limite)
+        {
+            numeros = parseInt(prompt("Digita o número"));
+            arrayy.unshift(numeros)
+            laço += 1;
+        }
+
+        for (let i = 0; i < arrayy.length; i++) 
+        {
+            soma += arrayy[i];
+        }
+    console.log("A soma dos elementos é:", soma);
+    resultado = soma / arrayy.length;
+    resultado = console.log("A média é " + resultado);
+    return resultado;
+    }
+    alert(media());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
